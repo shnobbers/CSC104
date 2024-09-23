@@ -1,0 +1,69 @@
+
+body {
+    background: #f4e4bc; 
+    color: #4a3c2c; 
+    font-family: 'Garamond', serif; 
+    padding: 20px;
+    line-height: 1.6;
+    background-image: url('parchment.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #3a2200; 
+    text-shadow: 2px 2px 2px #b79e79; 
+    font-family: 'Cinzel', serif; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h2 {
+    color: #3b2f19; 
+    text-shadow: 1px 1px 1px #b79e79; 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #4d3826; 
+    text-shadow: 1px 1px 1px #b79e79; 
+    font-family: 'Garamond', serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+p {
+    color: #2f2416; 
+    font-family: 'Garamond', serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px #e0d4b1;
+    margin-bottom: 15px;
+}
+
+
+a:visited {
+    color: #b59342; 
+}
+
+
+a {
+    color: #7c5c31; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b59342; 
+    text-decoration: underline;
+}
+
+#dragonite-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: auto;
+    z-index: 10;
+}
