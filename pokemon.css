@@ -1,0 +1,144 @@
+/* Import a nostalgic retro font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Global reset for default margins, paddings, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling for a nostalgic feel with modern aesthetics */
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro pixelated font */
+    background-color: #f5f5dc; /* Soft beige background */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improved text readability */
+    padding-bottom: 50px; /* Space at the bottom for footer */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Header styling with a drop shadow and retro font */
+header {
+    background-color: #ffcc00; /* Pokémon yellow */
+    padding: 25px; /* Extra padding */
+    text-align: center; /* Centered title and nav */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    position: relative; /* For stacking content inside */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow for text */
+}
+
+/* Main title with larger font size and drop shadow */
+header h1 {
+    color: #333; /* Dark color for the title */
+    font-size: 2.5em; /* Larger font */
+    letter-spacing: 1px; /* Slightly spaced letters */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Stronger drop shadow */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-top: 10px; /* Add space above the nav */
+}
+
+/* Inline list items with spacing */
+nav ul li {
+    display: inline-block;
+    margin: 0 20px; /* Wider spacing between nav items */
+}
+
+/* Styling for the navigation links */
+nav ul li a {
+    color: #333; /* Dark link text color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold nav links */
+    font-size: 1.2em; /* Increase font size */
+    transition: color 0.3s ease; /* Smooth transition */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Text drop shadow */
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+    color: #005326; /* Bright orange */
+}
+
+/* Home section with Pokémon-themed background */
+#home {
+    background-image: url('pokemonbanner.jpg'); /* Pokémon banner */
+    background-size: cover; /* Cover the section */
+    background-position: center; /* Center the background */
+    padding: 120px 20px; /* Spacious padding */
+    text-align: center; /* Centered text */
+    color: white; /* White text */
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3); /* Inner shadow */
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px auto; /* Center the section */
+    max-width: 1200px; /* Limit the width */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Strong text shadow */
+}
+
+/* Section styling with rounded corners */
+section {
+    margin: 30px auto; /* Auto margins for centering */
+    padding: 30px 20px; /* Generous padding */
+    max-width: 1200px; /* Limit section width */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Section headings with bold color and strong text shadow */
+h2 {
+    font-size: 2em; /* Larger heading size */
+    color: #ff4500; /* Pokémon orange */
+    margin-bottom: 15px; /* Spacing below headings */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); /* Stronger text shadow */
+}
+
+/* Table styling for card collection */
+table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* No gaps between cells */
+    margin-top: 20px; /* Space above the table */
+}
+
+/* Table headers and cells with neat borders */
+table th, table td {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 12px 15px; /* Comfortable padding */
+    text-align: left; /* Align text to the left */
+    font-size: 1.1em; /* Slightly larger font */
+}
+
+/* Clickable table headers with hover effect */
+table th {
+    cursor: pointer; /* Pointer cursor on hover */
+    background-color: #ffcc00; /* Pokémon yellow */
+    color: #333; /* Dark text */
+    transition: background-color 0.3s ease; /* Smooth color change */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Text shadow */
+}
+
+/* Hover effect for table headers */
+table th:hover {
+    background-color: #ffb300; /* Darker yellow on hover */
+}
+
+/* Alternating row colors for readability */
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey alternating rows */
+}
+
+/* Footer with retro font and drop shadow */
+footer {
+    background-color: #ffcc00; /* Pokémon yellow */
+    padding: 20px; /* Comfortable padding */
+    text-align: center; /* Centered content */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); /* Shadow above footer */
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    font-size: 1.1em; /* Larger footer text */
+    color: #333; /* Dark text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Drop shadow */
+}

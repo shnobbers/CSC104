@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport settings, and compatibility -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Title of the webpage -->
+    <title>Pokémon Card Collection</title>
+    
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+    <!-- Header section of the website -->
+    <header>
+        <h1>Pokémon Card Collection Organizer</h1>
+        
+        <!-- Navigation bar with links to different sections -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <li><a href="pokemon.html">Home</a></li>
+        <li><a href="pokemon2.html">Owned Pokémon</a></li>
+        <li><a href="#about">About</a></li>
+    </header>
+
+    <!-- Home section with a welcome message -->
+    <section id="home">
+        <h2>Welcome to Your Pokémon Card Organizer!</h2>
+        <p>Use this tool to organize, sort, and grade your Pokémon cards!</p>
+    </section>
+
+    <!-- Card collection section where the table is displayed -->
+    <section id="collection">
+        <h2>Your Card Collection</h2>
+        
+        <!-- Table structure for organizing Pokémon cards -->
+        <table id="cardTable">
+            <thead>
+                <tr>
+                    <!-- Each header cell has an onclick function for sorting the table based on the column -->
+                    <th onclick="sortTable(0)">Card Type</th>
+                    <th onclick="sortTable(1)">Quantity</th>
+                    <th onclick="sortTable(2)">Grade</th>
+                    <th onclick="sortTable(3)">Set</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example rows for the Pokémon cards. You can add more rows here -->
+                <tr>
+                    <td>Holo Cards</td>
+                    <td>22</td>
+                    <td>9</td>
+                    <td>Base Set</td>
+                </tr>
+                <tr>
+                    <td>Reverse Holo</td>
+                    <td>35</td>
+                    <td>10</td>
+                    <td>Base Set</td>
+                </tr>
+                <tr>
+                    <td>SIR</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>Base Set</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Made with love for all Pokémon Trainers!</p>
+    </footer>
+
+    <!-- JavaScript function for sorting the table when clicking on headers -->
+    <script>
+        function sortTable(columnIndex) {
+            let table = document.getElementById("cardTable"); // Reference to the table
+            let rows = Array.from(table.rows).slice(1); // Get all rows except the header row
+
+            // Sorting function: Alphabetical for text columns, numerical for the grade column
+            let sortedRows = rows.sort((a, b) => {
+                let cellA = a.cells[columnIndex].innerText.toLowerCase(); // Get the content of the clicked column
+                let cellB = b.cells[columnIndex].innerText.toLowerCase();
+                
+                if (columnIndex === 2) { // Special handling for the Grade column, sorting numerically
+                    return parseInt(cellA) - parseInt(cellB);
+                } else { // Default alphabetical sorting
+                    return cellA.localeCompare(cellB);
+                }
+            });
+
+            // Append the sorted rows back to the table body
+            sortedRows.forEach(row => table.appendChild(row));
+        }
+    </script>
+</body>
+</html>
